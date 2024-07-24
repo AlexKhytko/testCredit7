@@ -3,22 +3,19 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>credit7ua</groupId>
+        <artifactId>TestCredit7</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
 
-    <groupId>credit7ua</groupId>
-    <artifactId>TestCredit7</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <packaging>pom</packaging>
-    <modules>
-        <module>TestCredit7-Selenium</module>
-        <module>TestCredit7-API</module>
-    </modules>
+    <artifactId>TestCredit7-Selenium</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
         <dependency>
@@ -88,7 +85,7 @@
                 <version>3.2.5</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>F:\AventusGROOP\TestCredit7\testng.xml</suiteXmlFile>
+                        <suiteXmlFile>F:\Appium resources\PROJECT\Credit7\src\main\recourses\testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
 
@@ -102,5 +99,5 @@
             </plugin>
         </plugins>
     </build>
-    
+
 </project>
