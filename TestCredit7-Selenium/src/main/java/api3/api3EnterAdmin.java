@@ -1,20 +1,20 @@
-package credit7ua;
+package api3;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
-public class agisEnterAdmin {
+public class api3EnterAdmin {
     public static void main(String[] args) throws InterruptedException {
         String browserName = System.getenv("browser");
         System.out.println(browserName);
 
-        String userValue = "a.khitko";
-        String passwordValue = "Tmfhy,_64nsR";
+        String userValue = "powar";
+        String passwordValue = "showmethemoney";
 
         RemoteWebDriver browser = getDriver(args[0]);
-        browser.get("https://api.credit7.ua/admin/login");
+        browser.get("https://api3.uashort.agis.work/admin/");
 
 
         browser.manage().window().maximize();

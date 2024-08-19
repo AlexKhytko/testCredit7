@@ -1,9 +1,18 @@
-package credit7ua;
+import io.restassured.RestAssured;
+import org.junit.jupiter.api.BeforeAll;
+import org.testng.annotations.Test;
+
+import javax.swing.text.html.HTMLDocument;
 
 public class Credit7API {
+    @BeforeAll
+    public static void setup() {
+        RestAssured.baseURI = "https://api3.uashort.agis.work"; // Замените на ваш базовый URL
+    }
 //    @Test
-//    public void testGetBooks() {
-//        RestAssured.baseURI = "https://demoqa.com/swagger";
+//    HTMLDocument.RunElement tes
+//    public void testGetEndpoint() {
+//        RestAssured.baseURI = "https://api3.uashort.agis.work/swagger";
 //
 //        given().
 //                when().
@@ -24,5 +33,5 @@ public class Credit7API {
 //                then().
 //                statusCode(200).
 //                body("id", equalTo(1));
-//    }
+ //   }
 }

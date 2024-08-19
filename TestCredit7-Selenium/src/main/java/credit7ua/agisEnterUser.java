@@ -12,9 +12,9 @@ public class agisEnterUser {
         String browserName = System.getenv("browser");
         System.out.println(browserName);
 
-//        String numberValue = "0672790993";
+        String numberValue = "0672790993";
 //        String numberValue = "0500578168";
-        String numberValue = "0974853967";
+       // String numberValue = "0974853967";
 
         String userValue = "a.khitko";
         String passwordValue = "Tmfhy,_64nsR";
